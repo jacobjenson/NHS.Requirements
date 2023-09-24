@@ -1,0 +1,98 @@
+/* App.css */
+
+/* Overall container styling */
+div {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+/* Navigation bar styling */
+nav {
+    background-color: #333;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+    /* Navigation links */
+    nav a {
+        float: left; 
+        display: block;
+        color: white; 
+        text-align: center;
+        padding: 14px 16px; 
+        text-decoration: none; 
+        transition: 0.3s; /* Smoothens the hover effect */
+    }
+
+        /* Hover effect */
+        nav a:hover {
+            background-color: #ddd;
+            color: #333;
+        }
+
+        nav a.active {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 1rem;
+}
+
+th, td {
+    padding: 8px 12px;
+    border: 1px solid #e0e0e0;
+    text-align: left;
+}
+
+th {
+    background-color: #f7f7f7;
+    color: #555;
+    font-weight: 600;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #fafafa;
+}
+
+tbody tr:hover {
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+
+/* Loader styles */
+div.Loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    font-weight: 600;
+    color: #555;
+}
+
+form {
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    background-color: #f9f9f9;
+    max-width: 400px;
+}
+
+    form label {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    form input {
+        width: 100%;
+        padding: 8px;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+        border: 1px solid #e0e0e0;
+    }
+
