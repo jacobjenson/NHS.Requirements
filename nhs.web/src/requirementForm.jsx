@@ -25,7 +25,7 @@ function RequirementForm({ onSubmit }) {
                 Description:
                 <input type="text" name="description" value={newRequirement.description} onChange={handleInputChange} />
             </label>
-            <button type="submit">Submit</button>
+            <button type="submit">Save</button>
         </form>
     );
 }

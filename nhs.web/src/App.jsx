@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import RequirementsPage from './RequirementsPage';
-import StaffPage from './StaffPage';
+import RequirementsPage from './requirementsPage';
+import StaffPage from './staffPage';
 
 function App() {
     return (

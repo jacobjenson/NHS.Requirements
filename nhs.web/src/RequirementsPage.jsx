@@ -1,8 +1,7 @@
-// RequirementsPage.js
 import { useState, useEffect } from 'react';
 import Requirement from './requirement';
-import RequirementForm from './RequirementForm';
-import RequirementDetail from './RequirementDetail';
+import RequirementForm from './requirementForm';
+import RequirementDetail from './requirementDetail';
 
 function RequirementsPage() {
     console.log('RequirementsPage mounted');

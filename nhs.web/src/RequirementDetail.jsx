@@ -1,5 +1,4 @@
 /* eslint-disable react/prop-types */
-// RequirementDetail.js
 import { useState, useEffect } from 'react';
 
 function RequirementDetail({ requirement, onClose }) {
@@ -42,7 +41,7 @@ function RequirementDetail({ requirement, onClose }) {
             <p><strong>Title:</strong> {requirement.title}</p>
             <p><strong>Description:</strong> {requirement.description}</p>
             <p><strong>Date Created:</strong> {new Date(requirement.dateCreated).toLocaleDateString()}</p>
-            <p><strong>Status:</strong> {requirement.status}</p>
+            <p><strong>Status:</strong> {requirement.status == 1 ? "Open" : "Closed" }</p>
             <p><strong>Assigned To:</strong>
                 <select value={assignedTo} onChange={handleAssignedToChange}>
                     <option value="0">Unassigned</option>

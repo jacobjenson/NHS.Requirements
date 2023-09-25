@@ -1,5 +1,4 @@
 /* eslint-disable react/prop-types */
-// StaffForm.js
 import { useState } from 'react';
 
 function StaffForm({ onSubmit }) {
@@ -17,7 +16,7 @@ function StaffForm({ onSubmit }) {
                 Name:
                 <input type="text" value={name} onChange={e => setName(e.target.value)} required />
             </label>
-            <button type="submit">Add Staff</button>
+            <button type="submit">Save</button>
         </form>
     );
 }

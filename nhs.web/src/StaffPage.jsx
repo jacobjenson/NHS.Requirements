@@ -1,6 +1,5 @@
-// StaffPage.js
 import { useState, useEffect } from 'react';
-import StaffForm from './StaffForm';
+import StaffForm from './staffForm';
 
 function StaffPage() {
     const [staffList, setStaffList] = useState([]);
