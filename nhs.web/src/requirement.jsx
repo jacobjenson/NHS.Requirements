@@ -8,7 +8,7 @@ const Requirement = ({ requirement, onRowClick }) => {
             <td>{requirement.title}</td>
             <td>{requirement.description}</td>
             <td>{new Date(requirement.dateCreated).toLocaleDateString()}</td>
-            <td>{requirement.status}</td>
+            <td>{requirement.status == 1 ? "Open" : "Closed" }</td>
             <td>{requirement.assignedTo ? requirement.assignedTo.name : 'Unassigned'}</td>
         </tr>
     );

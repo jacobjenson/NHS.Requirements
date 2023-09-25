@@ -48,8 +48,8 @@ namespace NHS.Api.Controllers
             return requirement;
         }
 
-        [HttpGet("close/{id}")]
-        public void Close(int id)
+        [HttpGet("update-status/{id}/{status}")]
+        public void UpdateStatus(int id, Status status)
         {
             var requirement = _context.Requirements.Find(id);
 
@@ -58,7 +58,7 @@ namespace NHS.Api.Controllers
                 throw new Exception("Requirement not found");
             }
 
-            requirement.Status = Status.Closed;
+            requirement.Status = status;
             _context.SaveChanges();
         }
 
